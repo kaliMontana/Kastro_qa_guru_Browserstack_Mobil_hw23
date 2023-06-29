@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Silver <testingbugsrus@gmail.com>"]
 readme = "README.md"
-packages = [{include = "browserstacks_mobil"}]
+packages = [{ include = "browserstacks_mobil" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
