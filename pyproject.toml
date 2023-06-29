@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "browserstacks-mobil"
+version = "0.1.0"
+description = ""
+authors = ["Silver <testingbugsrus@gmail.com>"]
+readme = "README.md"
+packages = [{include = "browserstacks_mobil"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "7.4.0"
+selene = "2.0.0rc2"
+appium-python-client = "2.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
