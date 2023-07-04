@@ -21,3 +21,4 @@ Start tests:
 Being in the packet test: 
 pytest browserstack_test.py
 pytest browserstack_tests.py::test_search
+pytest browserstack_tests.py::test_search -context=remote

@@ -25,7 +25,7 @@ class Settings(pydantic.BaseSettings):
     projectName: Optional[str] = None
     buildName: Optional[str] = None
     sessionName: Optional[str] = None
-    print("ddddd " + context)
+
     # Credentials
     if context == 'remote':
         userNam: Optional[str] = os.getenv('browserstack.userNam')
@@ -42,8 +42,6 @@ class Settings(pydantic.BaseSettings):
 
     @property
     def driver_options(self):
-        print('self.accessKey ' + self.accessKey)
-        print('self.userName ' + self.userNam)
         options = UiAutomator2Options()
         options.device_name = self.deviceName
         options.platform_name = self.platformName
