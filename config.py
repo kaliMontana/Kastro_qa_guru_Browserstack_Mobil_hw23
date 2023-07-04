@@ -35,7 +35,7 @@ class Settings(pydantic.BaseSettings):
         accessKey: Optional[str] = os.getenv('local.accessKey')
 
     # Remote Driver
-    remote_url: str = 'http://hub.browserstack.com/wd/hub'
+    remote_url: str = None
 
     # Selene
     timeout: float = 6.0
