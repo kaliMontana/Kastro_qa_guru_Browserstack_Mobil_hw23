@@ -15,3 +15,9 @@ Task:
 - Сделать сборку в дженкинсе
 
 В качестве ответа на домашнее задание нужно прислать ссылку на репозиторий в гитхаб и аллюр-отчет в дженкинс
+
+
+Start tests:
+Being in the packet test: 
+pytest browserstack_test.py
+pytest browserstack_tests.py::test_search
