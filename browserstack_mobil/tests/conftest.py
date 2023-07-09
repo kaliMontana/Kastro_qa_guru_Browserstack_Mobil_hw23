@@ -3,6 +3,7 @@ from appium import webdriver
 from selene.support.shared import browser
 
 import config
+from browserstack_mobil.utils.attach import add_screenshot, attach_video
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -13,5 +14,7 @@ def driver_management():
     browser.config.timeout = config.settings.timeout
 
     yield
+    attach_video(browser)
+    add_screenshot(browser)
 
     browser.quit()
