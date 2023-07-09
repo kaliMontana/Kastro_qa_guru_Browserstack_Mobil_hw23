@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "browserstacks_mobil" }]
 
 [tool.poetry.dependencies]
-python = ">=3.10.5"
+python = "3.10.5"
 pytest = "7.4.0"
 selene = {version = "^2.0.0-beta.17", allow-prereleases = true}
 appium-python-client = "^2.8.1"
